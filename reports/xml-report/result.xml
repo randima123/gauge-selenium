@@ -1,0 +1,8 @@
+<testsuites>
+	<testsuite id="1" tests="1" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/sample.spec" time="10.000" timestamp="2020-11-11T00:08:29" name="Sample Specification Heading" errors="0" hostname="user-HP-ProBook-450-G6">
+		<properties></properties>
+		<testcase classname="Sample Specification Heading" name="Scenario 1" time="10.000"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+</testsuites>
