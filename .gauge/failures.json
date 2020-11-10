@@ -1,7 +1,9 @@
 {
 	"Args": [
 		"run",
-		"--dir=/home/user/Pictures/project/gauge-selenium"
+		"--machine-readable",
+		"--hide-suggestion",
+		"--simple-console"
 	],
 	"FailedItems": []
 }

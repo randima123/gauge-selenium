@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Getting Started with Gauge":["specs/example.html"]}};
+var index = {"Tags":{"regression":["specs/sample.html"],"tag1":["specs/sample.html"]},"Specs":{"Sample Specification Heading":["specs/sample.html"]}};

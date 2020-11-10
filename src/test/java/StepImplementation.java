@@ -27,4 +27,14 @@ public class StepImplementation {
         Driver.webDriver.get(app_url + "/");
         assertThat(Driver.webDriver.getTitle()).contains("Gauge");
     }
+
+    @Step("Welcome to <text>")
+    public void implementation2(String text) {
+        assertThat(text).isEqualTo("Gauge");
+    }
+
+    @Step("This is cool")
+    public void implementation3() {
+        assertThat(true).isEqualTo(true);
+    }
 }
