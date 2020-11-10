@@ -1,0 +1,6 @@
+[
+	"gauge",
+	"run",
+	"--dir=/home/user/Pictures/project/gauge-selenium",
+	"/home/user/Pictures/project/gauge-selenium/specs"
+]

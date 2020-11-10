@@ -1,0 +1,5 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"info","message":"Listening on port:36479"}
+{"logLevel":"fatal","message":"Error in thread 12\n'org.reflections.util.ConfigurationBuilder org.reflections.util.ConfigurationBuilder.filterInputsBy(com.google.common.base.Predicate)'\njava.lang.NoSuchMethodError: 'org.reflections.util.ConfigurationBuilder org.reflections.util.ConfigurationBuilder.filterInputsBy(com.google.common.base.Predicate)'\n\tat com.thoughtworks.gauge.scan.ClasspathScanner.createReflections(ClasspathScanner.java:66)\n\tat com.thoughtworks.gauge.scan.ClasspathScanner.scan(ClasspathScanner.java:43)\n\tat com.thoughtworks.gauge.connection.MessageProcessorFactory.getProcessor(MessageProcessorFactory.java:71)\n\tat com.thoughtworks.gauge.RunnerServiceHandler.lambda$initializeSuiteDataStore$0(RunnerServiceHandler.java:51)\n\tat com.thoughtworks.gauge.execution.TaskExecutor.run(TaskExecutor.java:22)\n"}
