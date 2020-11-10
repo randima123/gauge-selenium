@@ -1,8 +1,0 @@
-[
-	"/usr/local/bin/gauge",
-	"run",
-	"--machine-readable",
-	"--hide-suggestion",
-	"--simple-console",
-	"/home/user/Pictures/project/gauge-selenium/specs/sample.spec"
-]
