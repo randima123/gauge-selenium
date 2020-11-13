@@ -1,0 +1,11 @@
+Created by user on 11/12/20
+
+This is a concept file with following syntax for each concept.
+# Login with email as <email> and password as <password>
+* Input email <email>
+* Input password <password>
+* Click login button
+* User navigates to login page
+
+# User navigates to login page
+* Page title is "My account - My Store"
