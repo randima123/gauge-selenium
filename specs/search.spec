@@ -15,4 +15,4 @@ table: ./src/test/resources/invalid_search_results.csv
 * Login with email as "randima@mailinator.com" and password as "abc123"
 * Search item "T-shirt"
 * User sees search results
-* First search result name is "Faded Short Sleeve T-shirts" and price is "$16.51"
+* First search result name is "Faded Short Sleeve T-shirts" and price is "$16.513"

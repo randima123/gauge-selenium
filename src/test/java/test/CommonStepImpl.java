@@ -1,8 +1,8 @@
 package test;
 
 import com.thoughtworks.gauge.Step;
-import driver.Driver;
 import org.testng.Assert;
+import util.driver.Driver;
 
 public class CommonStepImpl {
 

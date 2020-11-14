@@ -1,7 +1,7 @@
 package test;
 
 import com.thoughtworks.gauge.Step;
-import driver.Driver;
+import util.driver.Driver;
 import page.LoginPage;
 
 public class LoginPageStepImpl {

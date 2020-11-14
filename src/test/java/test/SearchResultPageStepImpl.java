@@ -1,10 +1,9 @@
 package test;
 
 import com.thoughtworks.gauge.Step;
-import driver.Driver;
+import util.driver.Driver;
 import org.testng.Assert;
 import page.HomePage;
-import page.LoginPage;
 import page.SearchResultPage;
 import util.DataStoreProcessor;
 

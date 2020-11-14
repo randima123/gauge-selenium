@@ -1,4 +1,4 @@
-package driver;
+package util.driver;
 
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.BeforeScenario;
@@ -14,7 +14,7 @@ public class Driver {
     @BeforeScenario
     public void initializeDriver(){
         webDriver = DriverFactory.getDriver();
-        webDriver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        webDriver.get(System.getenv("APP_URL"));
     }
 
     // Close the webDriver instance
