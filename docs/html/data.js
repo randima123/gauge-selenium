@@ -1,0 +1,2 @@
+var tags = []
+var specs = [{"path":"specs/login.html","name":"Login Specification","scenarios":[{"name":"Existing user login into the application","tags":[]}]},{"path":"specs/search.html","name":"Search Specification","scenarios":[{"name":"User search for an invalid item","tags":[]},{"name":"User search for a valid item","tags":[]}]}]
