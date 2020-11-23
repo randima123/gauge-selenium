@@ -1,11 +1,15 @@
 package test;
 
 import com.thoughtworks.gauge.Step;
+import com.thoughtworks.gauge.Table;
+import com.thoughtworks.gauge.TableRow;
 import util.driver.Driver;
 import org.testng.Assert;
 import page.HomePage;
 import page.SearchResultPage;
 import util.DataStoreProcessor;
+
+import java.util.List;
 
 import static util.DataStoreProcessor.DataStoreType.SCENARIO;
 
@@ -30,10 +34,16 @@ public class SearchResultPageStepImpl {
         Assert.assertTrue(searchResultPage.getSearchResultCount() > 0 , "No search results returned");
     }
 
-    @Step("First search result name is <name> and price is <price>")
-    public void checkSearchNameAndPrice(String name, String price) {
-       Assert.assertEquals(searchResultPage.getFirstSearchResultName() , name);
-       Assert.assertEquals(searchResultPage.getFirstSearchResultPrice(), price);
+    @Step("Search result <table>")
+    public void validateSearchResult(Table table) {
+        List<TableRow> rows = table.getTableRows();
+        List<String> columnNames = table.getColumnNames();
+        for (TableRow row : rows) {
+            Assert.assertEquals(searchResultPage.getSearchResultNameByIndex(Integer.parseInt
+                    (row.getCell(columnNames.get(0)))) , row.getCell(columnNames.get(1)));
+            Assert.assertEquals(searchResultPage.getSearchResultPriceByIndex(Integer.parseInt
+                    (row.getCell(columnNames.get(0)))) , row.getCell(columnNames.get(2)));
+        }
     }
 
     @Step("No result found message is present")

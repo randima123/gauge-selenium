@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 public class SearchResultPage extends BasePage{
 
     private By searchResultsList = By.xpath("//div[@class='left-block']//div[@class='product-image-container']");
-    private By firstSearchResultName = By.xpath("//div[@class='right-block']//h5//a");
-    private By firstSearchResultPrice = By.xpath("//div[@class='right-block']//span[@itemprop='price']");
     private By resultNotFoundAlert = By.xpath("//p[contains(text(),'No results were found for your search')]");
 
     public SearchResultPage(WebDriver driver) {
@@ -18,12 +16,14 @@ public class SearchResultPage extends BasePage{
         return getElements(searchResultsList).size();
     }
 
-    public String getFirstSearchResultName() {
-        return getElement(firstSearchResultName).getText();
+    public String getSearchResultNameByIndex(int index) {
+        return getElement(By.xpath("//ul[@class='product_list grid row']/descendant::div[@class='product-container']" +
+                "["+index+"]//div[@class='right-block']//h5//a")).getText();
     }
 
-    public String getFirstSearchResultPrice() {
-        return getElement(firstSearchResultPrice).getText();
+    public String getSearchResultPriceByIndex(int index) {
+        return getElement(By.xpath("//ul[@class='product_list grid row']/descendant::div[@class='product-container']" +
+                "["+index+"]//div[@class='right-block']//span[@itemprop='price']")).getText();
     }
 
     public String getResultNotFoundMessage() {

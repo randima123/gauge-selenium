@@ -1,18 +1,7 @@
 <testsuites>
-	<testsuite id="1" tests="2" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/login.spec" time="26.784" timestamp="2020-11-14T19:55:12" name="Login Specification" errors="0" hostname="user-HP-ProBook-450-G6">
+	<testsuite id="1" tests="1" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/search.spec" time="19.980" timestamp="2020-11-16T19:58:11" name="Search Specification" errors="0" hostname="user-HP-ProBook-450-G6">
 		<properties></properties>
-		<testcase classname="Login Specification" name="Existing user login into the application 1" time="14.176"></testcase>
-		<testcase classname="Login Specification" name="Existing user login into the application 2" time="12.608"></testcase>
-		<system-out></system-out>
-		<system-err></system-err>
-	</testsuite>
-	<testsuite id="2" tests="3" failures="1" package="/home/user/Pictures/project/gauge-selenium/specs/search.spec" time="45.038" timestamp="2020-11-14T19:55:12" name="Search Specification" errors="0" hostname="user-HP-ProBook-450-G6">
-		<properties></properties>
-		<testcase classname="Search Specification" name="User search for a valid item" time="15.381">
-			<failure message="First search result name is &#34;Faded Short Sleeve T-shirts&#34; and price is &#34;$16.513&#34;&#xA;Step Execution Failure: &#39;java.lang.AssertionError: expected [$16.513] but found [$16.51]&#39;" type="First search result name is &#34;Faded Short Sleeve T-shirts&#34; and price is &#34;$16.513&#34;&#xA;Step Execution Failure: &#39;java.lang.AssertionError: expected [$16.513] but found [$16.51]&#39;">org.testng.Assert.fail(Assert.java:97)&#xA;org.testng.Assert.assertEqualsImpl(Assert.java:136)&#xA;org.testng.Assert.assertEquals(Assert.java:118)&#xA;org.testng.Assert.assertEquals(Assert.java:575)&#xA;org.testng.Assert.assertEquals(Assert.java:585)&#xA;test.SearchResultPageStepImpl.checkSearchNameAndPrice(SearchResultPageStepImpl.java:36)&#xA;java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xA;java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#xA;java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xA;java.base/java.lang.reflect.Method.invoke(Method.java:566)&#xA;com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:38)&#xA;com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:76)&#xA;com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:69)&#xA;com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:51)&#xA;com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)&#xA;com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:43)&#xA;com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:29)&#xA;com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:48)&#xA;com.thoughtworks.gauge.RunnerServiceHandler.lambda$executeStep$7(RunnerServiceHandler.java:176)&#xA;com.thoughtworks.gauge.execution.TaskExecutor.run(TaskExecutor.java:22)&#xA;</failure>
-		</testcase>
-		<testcase classname="Search Specification" name="User search for an invalid item 1" time="15.000"></testcase>
-		<testcase classname="Search Specification" name="User search for an invalid item 2" time="14.657"></testcase>
+		<testcase classname="Search Specification" name="User search for a valid item" time="19.980"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>
