@@ -1,7 +1,17 @@
 <testsuites>
-	<testsuite id="1" tests="1" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/search.spec" time="19.980" timestamp="2020-11-16T19:58:11" name="Search Specification" errors="0" hostname="user-HP-ProBook-450-G6">
+	<testsuite id="1" tests="3" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/login.spec" time="40.889" timestamp="2020-11-23T18:46:10" name="Login Specification" errors="0" hostname="user-HP-ProBook-450-G6">
 		<properties></properties>
-		<testcase classname="Search Specification" name="User search for a valid item" time="19.980"></testcase>
+		<testcase classname="Login Specification" name="Invalid user login into the application" time="15.714"></testcase>
+		<testcase classname="Login Specification" name="Existing user login into the application 1" time="11.260"></testcase>
+		<testcase classname="Login Specification" name="Existing user login into the application 2" time="13.915"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+	<testsuite id="2" tests="3" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/search.spec" time="45.939" timestamp="2020-11-23T18:46:10" name="Search Specification" errors="0" hostname="user-HP-ProBook-450-G6">
+		<properties></properties>
+		<testcase classname="Search Specification" name="User search for a valid item" time="16.762"></testcase>
+		<testcase classname="Search Specification" name="User search for an invalid item 1" time="15.541"></testcase>
+		<testcase classname="Search Specification" name="User search for an invalid item 2" time="13.636"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>

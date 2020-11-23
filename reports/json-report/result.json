@@ -1,27 +1,140 @@
 {
 	"projectName": "gauge-selenium",
-	"timestamp": "Nov 16, 2020 at 7:57pm",
+	"timestamp": "Nov 23, 2020 at 6:44pm",
 	"successRate": 100,
-	"environment": "default",
+	"environment": "qa",
 	"tags": "",
-	"executionTime": 49772,
+	"executionTime": 98562,
 	"executionStatus": "passed",
 	"specResults": [
 		{
-			"specHeading": "Search Specification",
-			"fileName": "/home/user/Pictures/project/gauge-selenium/specs/search.spec",
+			"specHeading": "Login Specification",
+			"fileName": "/home/user/Pictures/project/gauge-selenium/specs/login.spec",
 			"tags": [
-				"search"
+				"login"
 			],
-			"executionTime": 19980,
+			"executionTime": 40889,
 			"executionStatus": "passed",
 			"scenarios": [
 				{
-					"scenarioHeading": "User search for a valid item",
+					"scenarioHeading": "Invalid user login into the application",
 					"tags": [
 						"negative"
 					],
-					"executionTime": 19980,
+					"executionTime": 15714,
+					"executionStatus": "passed",
+					"contexts": [],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "step",
+							"stepText": "Input email \"test.email.com\"",
+							"parameters": [
+								{
+									"parameterType": "static",
+									"name": "",
+									"value": "test.email.com",
+									"table": null
+								}
+							],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"afterStepHookFailure": null,
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 495,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						},
+						{
+							"itemType": "step",
+							"stepText": "Input password \"123123\"",
+							"parameters": [
+								{
+									"parameterType": "static",
+									"name": "",
+									"value": "123123",
+									"table": null
+								}
+							],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"afterStepHookFailure": null,
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 409,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						},
+						{
+							"itemType": "step",
+							"stepText": "Click login button",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"afterStepHookFailure": null,
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 2144,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						},
+						{
+							"itemType": "step",
+							"stepText": "Page title is \"Login - My Store\"",
+							"parameters": [
+								{
+									"parameterType": "static",
+									"name": "",
+									"value": "Login - My Store",
+									"table": null
+								}
+							],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"afterStepHookFailure": null,
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 17,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"afterScenarioHookFailure": null,
+					"skipErrors": [],
+					"tableRowIndex": -1
+				},
+				{
+					"scenarioHeading": "Existing user login into the application",
+					"tags": [
+						"positive"
+					],
+					"executionTime": 11260,
 					"executionStatus": "passed",
 					"contexts": [],
 					"teardowns": [],
@@ -34,13 +147,13 @@
 								"parameters": [
 									{
 										"parameterType": "static",
-										"name": "",
+										"name": "email",
 										"value": "randima@mailinator.com",
 										"table": null
 									},
 									{
 										"parameterType": "static",
-										"name": "",
+										"name": "password",
 										"value": "abc123",
 										"table": null
 									}
@@ -53,7 +166,7 @@
 									"stackTrace": "",
 									"screenshot": "",
 									"errorMessage": "",
-									"executionTime": 3813,
+									"executionTime": 4520,
 									"skippedReason": "",
 									"messages": [],
 									"errorType": "assertion",
@@ -80,7 +193,7 @@
 										"stackTrace": "",
 										"screenshot": "",
 										"errorMessage": "",
-										"executionTime": 641,
+										"executionTime": 491,
 										"skippedReason": "",
 										"messages": [],
 										"errorType": "assertion",
@@ -106,7 +219,7 @@
 										"stackTrace": "",
 										"screenshot": "",
 										"errorMessage": "",
-										"executionTime": 547,
+										"executionTime": 354,
 										"skippedReason": "",
 										"messages": [],
 										"errorType": "assertion",
@@ -125,7 +238,7 @@
 										"stackTrace": "",
 										"screenshot": "",
 										"errorMessage": "",
-										"executionTime": 2606,
+										"executionTime": 3632,
 										"skippedReason": "",
 										"messages": [],
 										"errorType": "assertion",
@@ -146,7 +259,7 @@
 											"stackTrace": "",
 											"screenshot": "",
 											"errorMessage": "",
-											"executionTime": 19,
+											"executionTime": 43,
 											"skippedReason": "",
 											"messages": [],
 											"errorType": "assertion",
@@ -173,7 +286,7 @@
 												"stackTrace": "",
 												"screenshot": "",
 												"errorMessage": "",
-												"executionTime": 19,
+												"executionTime": 43,
 												"skippedReason": "",
 												"messages": [],
 												"errorType": "assertion",
@@ -205,7 +318,437 @@
 								"errorType": "",
 								"ScreenshotFile": ""
 							}
-						},
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"afterScenarioHookFailure": null,
+					"skipErrors": [],
+					"tableRowIndex": 0
+				},
+				{
+					"scenarioHeading": "Existing user login into the application",
+					"tags": [
+						"positive"
+					],
+					"executionTime": 13915,
+					"executionStatus": "passed",
+					"contexts": [],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "concept",
+							"conceptStep": {
+								"itemType": "step",
+								"stepText": "Login with email as \u003cemail\u003e and password as \u003cpassword\u003e",
+								"parameters": [
+									{
+										"parameterType": "static",
+										"name": "email",
+										"value": "randima@mailinator.com",
+										"table": null
+									},
+									{
+										"parameterType": "static",
+										"name": "password",
+										"value": "abc123",
+										"table": null
+									}
+								],
+								"table": null,
+								"beforeStepHookFailure": null,
+								"afterStepHookFailure": null,
+								"result": {
+									"status": "passed",
+									"stackTrace": "",
+									"screenshot": "",
+									"errorMessage": "",
+									"executionTime": 4069,
+									"skippedReason": "",
+									"messages": [],
+									"errorType": "assertion",
+									"ScreenshotFile": ""
+								}
+							},
+							"items": [
+								{
+									"itemType": "step",
+									"stepText": "Input email \u003cemail\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "email",
+											"value": "randima@mailinator.com",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 493,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Input password \u003cpassword\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "password",
+											"value": "abc123",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 384,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Click login button",
+									"parameters": [],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 3149,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "concept",
+									"conceptStep": {
+										"itemType": "step",
+										"stepText": "User navigates to my account page",
+										"parameters": [],
+										"table": null,
+										"beforeStepHookFailure": null,
+										"afterStepHookFailure": null,
+										"result": {
+											"status": "passed",
+											"stackTrace": "",
+											"screenshot": "",
+											"errorMessage": "",
+											"executionTime": 43,
+											"skippedReason": "",
+											"messages": [],
+											"errorType": "assertion",
+											"ScreenshotFile": ""
+										}
+									},
+									"items": [
+										{
+											"itemType": "step",
+											"stepText": "Page title is \"My account - My Store\"",
+											"parameters": [
+												{
+													"parameterType": "static",
+													"name": "",
+													"value": "My account - My Store",
+													"table": null
+												}
+											],
+											"table": null,
+											"beforeStepHookFailure": null,
+											"afterStepHookFailure": null,
+											"result": {
+												"status": "passed",
+												"stackTrace": "",
+												"screenshot": "",
+												"errorMessage": "",
+												"executionTime": 43,
+												"skippedReason": "",
+												"messages": [],
+												"errorType": "assertion",
+												"ScreenshotFile": ""
+											}
+										}
+									],
+									"result": {
+										"status": "",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 0,
+										"skippedReason": "",
+										"messages": null,
+										"errorType": "",
+										"ScreenshotFile": ""
+									}
+								}
+							],
+							"result": {
+								"status": "",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": null,
+								"errorType": "",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"afterScenarioHookFailure": null,
+					"skipErrors": [],
+					"tableRowIndex": 1
+				}
+			],
+			"isTableDriven": true,
+			"datatable": {
+				"headers": [
+					"Email",
+					"Password"
+				],
+				"rows": [
+					{
+						"cells": [
+							"randima@mailinator.com",
+							"abc123"
+						]
+					},
+					{
+						"cells": [
+							"randima@mailinator.com",
+							"abc123"
+						]
+					}
+				]
+			},
+			"beforeSpecHookFailure": null,
+			"afterSpecHookFailure": null,
+			"passedScenarioCount": 3,
+			"failedScenarioCount": 0,
+			"skippedScenarioCount": 0
+		},
+		{
+			"specHeading": "Search Specification",
+			"fileName": "/home/user/Pictures/project/gauge-selenium/specs/search.spec",
+			"tags": [
+				"search"
+			],
+			"executionTime": 45939,
+			"executionStatus": "passed",
+			"scenarios": [
+				{
+					"scenarioHeading": "User search for a valid item",
+					"tags": [
+						"negative"
+					],
+					"executionTime": 16762,
+					"executionStatus": "passed",
+					"contexts": [
+						{
+							"itemType": "concept",
+							"conceptStep": {
+								"itemType": "step",
+								"stepText": "Login with email as \u003cemail\u003e and password as \u003cpassword\u003e",
+								"parameters": [
+									{
+										"parameterType": "static",
+										"name": "",
+										"value": "randima@mailinator.com",
+										"table": null
+									},
+									{
+										"parameterType": "static",
+										"name": "",
+										"value": "abc123",
+										"table": null
+									}
+								],
+								"table": null,
+								"beforeStepHookFailure": null,
+								"afterStepHookFailure": null,
+								"result": {
+									"status": "passed",
+									"stackTrace": "",
+									"screenshot": "",
+									"errorMessage": "",
+									"executionTime": 3784,
+									"skippedReason": "",
+									"messages": [],
+									"errorType": "assertion",
+									"ScreenshotFile": ""
+								}
+							},
+							"items": [
+								{
+									"itemType": "step",
+									"stepText": "Input email \u003cemail\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "email",
+											"value": "randima@mailinator.com",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 417,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Input password \u003cpassword\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "password",
+											"value": "abc123",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 408,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Click login button",
+									"parameters": [],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 2927,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "concept",
+									"conceptStep": {
+										"itemType": "step",
+										"stepText": "User navigates to my account page",
+										"parameters": [],
+										"table": null,
+										"beforeStepHookFailure": null,
+										"afterStepHookFailure": null,
+										"result": {
+											"status": "passed",
+											"stackTrace": "",
+											"screenshot": "",
+											"errorMessage": "",
+											"executionTime": 32,
+											"skippedReason": "",
+											"messages": [],
+											"errorType": "assertion",
+											"ScreenshotFile": ""
+										}
+									},
+									"items": [
+										{
+											"itemType": "step",
+											"stepText": "Page title is \"My account - My Store\"",
+											"parameters": [
+												{
+													"parameterType": "static",
+													"name": "",
+													"value": "My account - My Store",
+													"table": null
+												}
+											],
+											"table": null,
+											"beforeStepHookFailure": null,
+											"afterStepHookFailure": null,
+											"result": {
+												"status": "passed",
+												"stackTrace": "",
+												"screenshot": "",
+												"errorMessage": "",
+												"executionTime": 32,
+												"skippedReason": "",
+												"messages": [],
+												"errorType": "assertion",
+												"ScreenshotFile": ""
+											}
+										}
+									],
+									"result": {
+										"status": "",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 0,
+										"skippedReason": "",
+										"messages": null,
+										"errorType": "",
+										"ScreenshotFile": ""
+									}
+								}
+							],
+							"result": {
+								"status": "",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": null,
+								"errorType": "",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"teardowns": [],
+					"items": [
 						{
 							"itemType": "concept",
 							"conceptStep": {
@@ -227,7 +770,7 @@
 									"stackTrace": "",
 									"screenshot": "",
 									"errorMessage": "",
-									"executionTime": 4266,
+									"executionTime": 3691,
 									"skippedReason": "",
 									"messages": [],
 									"errorType": "assertion",
@@ -254,7 +797,7 @@
 										"stackTrace": "",
 										"screenshot": "",
 										"errorMessage": "",
-										"executionTime": 379,
+										"executionTime": 312,
 										"skippedReason": "",
 										"messages": [],
 										"errorType": "assertion",
@@ -273,7 +816,7 @@
 										"stackTrace": "",
 										"screenshot": "",
 										"errorMessage": "",
-										"executionTime": 3887,
+										"executionTime": 3379,
 										"skippedReason": "",
 										"messages": [],
 										"errorType": "assertion",
@@ -305,7 +848,7 @@
 								"stackTrace": "",
 								"screenshot": "",
 								"errorMessage": "",
-								"executionTime": 172,
+								"executionTime": 137,
 								"skippedReason": "",
 								"messages": [],
 								"errorType": "assertion",
@@ -361,7 +904,7 @@
 								"stackTrace": "",
 								"screenshot": "",
 								"errorMessage": "",
-								"executionTime": 418,
+								"executionTime": 468,
 								"skippedReason": "",
 								"messages": [],
 								"errorType": "assertion",
@@ -373,26 +916,649 @@
 					"afterScenarioHookFailure": null,
 					"skipErrors": [],
 					"tableRowIndex": -1
+				},
+				{
+					"scenarioHeading": "User search for an invalid item",
+					"tags": [
+						"positive"
+					],
+					"executionTime": 15541,
+					"executionStatus": "passed",
+					"contexts": [
+						{
+							"itemType": "concept",
+							"conceptStep": {
+								"itemType": "step",
+								"stepText": "Login with email as \u003cemail\u003e and password as \u003cpassword\u003e",
+								"parameters": [
+									{
+										"parameterType": "static",
+										"name": "",
+										"value": "randima@mailinator.com",
+										"table": null
+									},
+									{
+										"parameterType": "static",
+										"name": "",
+										"value": "abc123",
+										"table": null
+									}
+								],
+								"table": null,
+								"beforeStepHookFailure": null,
+								"afterStepHookFailure": null,
+								"result": {
+									"status": "passed",
+									"stackTrace": "",
+									"screenshot": "",
+									"errorMessage": "",
+									"executionTime": 3654,
+									"skippedReason": "",
+									"messages": [],
+									"errorType": "assertion",
+									"ScreenshotFile": ""
+								}
+							},
+							"items": [
+								{
+									"itemType": "step",
+									"stepText": "Input email \u003cemail\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "email",
+											"value": "randima@mailinator.com",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 526,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Input password \u003cpassword\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "password",
+											"value": "abc123",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 331,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Click login button",
+									"parameters": [],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 2767,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "concept",
+									"conceptStep": {
+										"itemType": "step",
+										"stepText": "User navigates to my account page",
+										"parameters": [],
+										"table": null,
+										"beforeStepHookFailure": null,
+										"afterStepHookFailure": null,
+										"result": {
+											"status": "passed",
+											"stackTrace": "",
+											"screenshot": "",
+											"errorMessage": "",
+											"executionTime": 30,
+											"skippedReason": "",
+											"messages": [],
+											"errorType": "assertion",
+											"ScreenshotFile": ""
+										}
+									},
+									"items": [
+										{
+											"itemType": "step",
+											"stepText": "Page title is \"My account - My Store\"",
+											"parameters": [
+												{
+													"parameterType": "static",
+													"name": "",
+													"value": "My account - My Store",
+													"table": null
+												}
+											],
+											"table": null,
+											"beforeStepHookFailure": null,
+											"afterStepHookFailure": null,
+											"result": {
+												"status": "passed",
+												"stackTrace": "",
+												"screenshot": "",
+												"errorMessage": "",
+												"executionTime": 30,
+												"skippedReason": "",
+												"messages": [],
+												"errorType": "assertion",
+												"ScreenshotFile": ""
+											}
+										}
+									],
+									"result": {
+										"status": "",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 0,
+										"skippedReason": "",
+										"messages": null,
+										"errorType": "",
+										"ScreenshotFile": ""
+									}
+								}
+							],
+							"result": {
+								"status": "",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": null,
+								"errorType": "",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "concept",
+							"conceptStep": {
+								"itemType": "step",
+								"stepText": "Search item \u003citemName\u003e",
+								"parameters": [
+									{
+										"parameterType": "static",
+										"name": "itemName",
+										"value": "trouser",
+										"table": null
+									}
+								],
+								"table": null,
+								"beforeStepHookFailure": null,
+								"afterStepHookFailure": null,
+								"result": {
+									"status": "passed",
+									"stackTrace": "",
+									"screenshot": "",
+									"errorMessage": "",
+									"executionTime": 3227,
+									"skippedReason": "",
+									"messages": [],
+									"errorType": "assertion",
+									"ScreenshotFile": ""
+								}
+							},
+							"items": [
+								{
+									"itemType": "step",
+									"stepText": "Enter search item name \u003citemName\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "itemName",
+											"value": "trouser",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 344,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Click on search button",
+									"parameters": [],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 2883,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								}
+							],
+							"result": {
+								"status": "",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": null,
+								"errorType": "",
+								"ScreenshotFile": ""
+							}
+						},
+						{
+							"itemType": "step",
+							"stepText": "No result found message is present",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"afterStepHookFailure": null,
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 246,
+								"skippedReason": "",
+								"messages": [
+									"itemName of SCENARIO contains \"trouser\""
+								],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"afterScenarioHookFailure": null,
+					"skipErrors": [],
+					"tableRowIndex": 0
+				},
+				{
+					"scenarioHeading": "User search for an invalid item",
+					"tags": [
+						"positive"
+					],
+					"executionTime": 13636,
+					"executionStatus": "passed",
+					"contexts": [
+						{
+							"itemType": "concept",
+							"conceptStep": {
+								"itemType": "step",
+								"stepText": "Login with email as \u003cemail\u003e and password as \u003cpassword\u003e",
+								"parameters": [
+									{
+										"parameterType": "static",
+										"name": "",
+										"value": "randima@mailinator.com",
+										"table": null
+									},
+									{
+										"parameterType": "static",
+										"name": "",
+										"value": "abc123",
+										"table": null
+									}
+								],
+								"table": null,
+								"beforeStepHookFailure": null,
+								"afterStepHookFailure": null,
+								"result": {
+									"status": "passed",
+									"stackTrace": "",
+									"screenshot": "",
+									"errorMessage": "",
+									"executionTime": 3826,
+									"skippedReason": "",
+									"messages": [],
+									"errorType": "assertion",
+									"ScreenshotFile": ""
+								}
+							},
+							"items": [
+								{
+									"itemType": "step",
+									"stepText": "Input email \u003cemail\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "email",
+											"value": "randima@mailinator.com",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 443,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Input password \u003cpassword\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "password",
+											"value": "abc123",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 333,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Click login button",
+									"parameters": [],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 3038,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "concept",
+									"conceptStep": {
+										"itemType": "step",
+										"stepText": "User navigates to my account page",
+										"parameters": [],
+										"table": null,
+										"beforeStepHookFailure": null,
+										"afterStepHookFailure": null,
+										"result": {
+											"status": "passed",
+											"stackTrace": "",
+											"screenshot": "",
+											"errorMessage": "",
+											"executionTime": 12,
+											"skippedReason": "",
+											"messages": [],
+											"errorType": "assertion",
+											"ScreenshotFile": ""
+										}
+									},
+									"items": [
+										{
+											"itemType": "step",
+											"stepText": "Page title is \"My account - My Store\"",
+											"parameters": [
+												{
+													"parameterType": "static",
+													"name": "",
+													"value": "My account - My Store",
+													"table": null
+												}
+											],
+											"table": null,
+											"beforeStepHookFailure": null,
+											"afterStepHookFailure": null,
+											"result": {
+												"status": "passed",
+												"stackTrace": "",
+												"screenshot": "",
+												"errorMessage": "",
+												"executionTime": 12,
+												"skippedReason": "",
+												"messages": [],
+												"errorType": "assertion",
+												"ScreenshotFile": ""
+											}
+										}
+									],
+									"result": {
+										"status": "",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 0,
+										"skippedReason": "",
+										"messages": null,
+										"errorType": "",
+										"ScreenshotFile": ""
+									}
+								}
+							],
+							"result": {
+								"status": "",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": null,
+								"errorType": "",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "concept",
+							"conceptStep": {
+								"itemType": "step",
+								"stepText": "Search item \u003citemName\u003e",
+								"parameters": [
+									{
+										"parameterType": "static",
+										"name": "itemName",
+										"value": "testItem",
+										"table": null
+									}
+								],
+								"table": null,
+								"beforeStepHookFailure": null,
+								"afterStepHookFailure": null,
+								"result": {
+									"status": "passed",
+									"stackTrace": "",
+									"screenshot": "",
+									"errorMessage": "",
+									"executionTime": 2700,
+									"skippedReason": "",
+									"messages": [],
+									"errorType": "assertion",
+									"ScreenshotFile": ""
+								}
+							},
+							"items": [
+								{
+									"itemType": "step",
+									"stepText": "Enter search item name \u003citemName\u003e",
+									"parameters": [
+										{
+											"parameterType": "dynamic",
+											"name": "itemName",
+											"value": "testItem",
+											"table": null
+										}
+									],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 327,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								},
+								{
+									"itemType": "step",
+									"stepText": "Click on search button",
+									"parameters": [],
+									"table": null,
+									"beforeStepHookFailure": null,
+									"afterStepHookFailure": null,
+									"result": {
+										"status": "passed",
+										"stackTrace": "",
+										"screenshot": "",
+										"errorMessage": "",
+										"executionTime": 2373,
+										"skippedReason": "",
+										"messages": [],
+										"errorType": "assertion",
+										"ScreenshotFile": ""
+									}
+								}
+							],
+							"result": {
+								"status": "",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": null,
+								"errorType": "",
+								"ScreenshotFile": ""
+							}
+						},
+						{
+							"itemType": "step",
+							"stepText": "No result found message is present",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"afterStepHookFailure": null,
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 228,
+								"skippedReason": "",
+								"messages": [
+									"itemName of SCENARIO contains \"testItem\""
+								],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"afterScenarioHookFailure": null,
+					"skipErrors": [],
+					"tableRowIndex": 1
 				}
 			],
-			"isTableDriven": false,
+			"isTableDriven": true,
 			"datatable": {
-				"headers": [],
-				"rows": []
+				"headers": [
+					"Item Name"
+				],
+				"rows": [
+					{
+						"cells": [
+							"trouser"
+						]
+					},
+					{
+						"cells": [
+							"testItem"
+						]
+					}
+				]
 			},
 			"beforeSpecHookFailure": null,
 			"afterSpecHookFailure": null,
-			"passedScenarioCount": 1,
+			"passedScenarioCount": 3,
 			"failedScenarioCount": 0,
 			"skippedScenarioCount": 0
 		}
 	],
 	"beforeSuiteHookFailure": null,
 	"afterSuiteHookFailure": null,
-	"passedSpecsCount": 1,
+	"passedSpecsCount": 2,
 	"failedSpecsCount": 0,
 	"skippedSpecsCount": 0,
-	"passedScenariosCount": 1,
+	"passedScenariosCount": 6,
 	"failedScenariosCount": 0,
 	"skippedScenariosCount": 0
 }
