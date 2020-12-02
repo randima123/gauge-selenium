@@ -9,7 +9,7 @@ Tags: login
 
     |Email                  |Password|
     |-----------------------|--------|
-    |randima@mailinator.com |abc1234 |
+    |randima@mailinator.com |abc123  |
     |randima@mailinator.com |abc123  |
 
 ## Existing user login into the application
