@@ -1,17 +1,17 @@
 <testsuites>
-	<testsuite id="1" tests="3" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/login.spec" time="40.889" timestamp="2020-11-23T18:46:10" name="Login Specification" errors="0" hostname="user-HP-ProBook-450-G6">
+	<testsuite id="1" tests="3" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/login.spec" time="31.949" timestamp="2020-11-27T00:35:48" name="Login Specification" errors="0" hostname="user-HP-ProBook-450-G6">
 		<properties></properties>
-		<testcase classname="Login Specification" name="Invalid user login into the application" time="15.714"></testcase>
-		<testcase classname="Login Specification" name="Existing user login into the application 1" time="11.260"></testcase>
-		<testcase classname="Login Specification" name="Existing user login into the application 2" time="13.915"></testcase>
+		<testcase classname="Login Specification" name="Invalid user login into the application" time="12.174"></testcase>
+		<testcase classname="Login Specification" name="Existing user login into the application 1" time="9.729"></testcase>
+		<testcase classname="Login Specification" name="Existing user login into the application 2" time="10.046"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>
-	<testsuite id="2" tests="3" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/search.spec" time="45.939" timestamp="2020-11-23T18:46:10" name="Search Specification" errors="0" hostname="user-HP-ProBook-450-G6">
+	<testsuite id="2" tests="3" failures="0" package="/home/user/Pictures/project/gauge-selenium/specs/search.spec" time="44.887" timestamp="2020-11-27T00:35:48" name="Search Specification" errors="0" hostname="user-HP-ProBook-450-G6">
 		<properties></properties>
-		<testcase classname="Search Specification" name="User search for a valid item" time="16.762"></testcase>
-		<testcase classname="Search Specification" name="User search for an invalid item 1" time="15.541"></testcase>
-		<testcase classname="Search Specification" name="User search for an invalid item 2" time="13.636"></testcase>
+		<testcase classname="Search Specification" name="User search for a valid item" time="13.352"></testcase>
+		<testcase classname="Search Specification" name="User search for an invalid item 1" time="12.498"></testcase>
+		<testcase classname="Search Specification" name="User search for an invalid item 2" time="19.037"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>
